@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UGR9Drqds34vD/8tYirp9HJPRsK9zxFG40AeduStBJOWBO7B5s6vlyE37lyQ6eRaPI64uUOzHQ8BUmIFGa5b3w==",
+  "success": true,
+  "projectFilePath": "C:\\RepozytoriaGithub\\Wizualne\\TomaszewskiWawrzyniak.MonitoryAppArchitektura\\TomaszewskiWawrzyniak.MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wawrz\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\wawrz\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\wawrz\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

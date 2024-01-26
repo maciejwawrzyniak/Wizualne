@@ -1,0 +1,17 @@
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.deps.json
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.dll
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.pdb
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.dll
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.pdb
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj.AssemblyReference.cache
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.GeneratedMSBuildEditorConfig.editorconfig
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.AssemblyInfoInputs.cache
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.AssemblyInfo.cs
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj.CoreCompileInputs.cache
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj.CopyComplete
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.dll
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\refint\TomaszewskiWawrzyniak.MonitoryApp.BLC.dll
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.pdb
+C:\RepozytoriaGithub\Wizualne\TomaszewskiWawrzyniak.MonitoryAppArchitektura\TomaszewskiWawrzyniak.MonitoryApp.BLC\obj\Debug\net8.0\ref\TomaszewskiWawrzyniak.MonitoryApp.BLC.dll

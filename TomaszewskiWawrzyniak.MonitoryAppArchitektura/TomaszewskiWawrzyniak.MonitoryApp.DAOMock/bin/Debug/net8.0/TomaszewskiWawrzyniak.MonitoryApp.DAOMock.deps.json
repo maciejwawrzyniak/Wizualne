@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TomaszewskiWawrzyniak.MonitoryApp.DAOMock/1.0.0": {
+        "dependencies": {
+          "TomaszewskiWawrzyniak.MonitoryApp.Core": "1.0.0",
+          "TomaszewskiWawrzyniak.MonitoryApp.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "TomaszewskiWawrzyniak.MonitoryApp.DAOMock.dll": {}
+        }
+      },
+      "TomaszewskiWawrzyniak.MonitoryApp.Core/1.0.0": {
+        "runtime": {
+          "TomaszewskiWawrzyniak.MonitoryApp.Core.dll": {}
+        }
+      },
+      "TomaszewskiWawrzyniak.MonitoryApp.Interfaces/1.0.0": {
+        "dependencies": {
+          "TomaszewskiWawrzyniak.MonitoryApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "TomaszewskiWawrzyniak.MonitoryApp.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TomaszewskiWawrzyniak.MonitoryApp.DAOMock/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TomaszewskiWawrzyniak.MonitoryApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TomaszewskiWawrzyniak.MonitoryApp.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
