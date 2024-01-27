@@ -9,7 +9,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Interfaces
 {
     public interface IMonitor
     {
-        int ID { get; set; }
+        Guid ID { get; set; }
         string Name { get; set; }
         IProducer Producer { get; set; }
         float Diagonal {  get; set; }

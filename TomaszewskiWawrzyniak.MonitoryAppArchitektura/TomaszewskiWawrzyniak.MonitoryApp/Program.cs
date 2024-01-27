@@ -6,7 +6,6 @@ namespace TomaszewskiWawrzyniak.MonitoryApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
             string libraryName = System.Configuration.ConfigurationManager.AppSettings["DAOLibraryName"];
             BLC.BLC blc = new BLC.BLC(libraryName);
 

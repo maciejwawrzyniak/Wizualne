@@ -2,8 +2,8 @@
 {
     public interface IProducer
     {
-        int ID { get; set; }
+        Guid ID { get; set; }
         string Name { get; set; }
-        string Address { get; set; }
+        string CountryFrom { get; set; }
     }
 }

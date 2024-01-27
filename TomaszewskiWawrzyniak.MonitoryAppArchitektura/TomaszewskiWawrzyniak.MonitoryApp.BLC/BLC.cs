@@ -7,8 +7,9 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
     {
         private IDAO dao;
 
-        public BLC( string libraryName)
+        public BLC( string libraryName, )
         {
+
             Type? typeToCreate = null;
             Assembly assembly = Assembly.UnsafeLoadFrom(libraryName);
             foreach( Type type in assembly.GetTypes() )
