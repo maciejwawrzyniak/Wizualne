@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TomaszewskiWawrzyniak.MonitoryApp.Core\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj" />
     <ProjectReference Include="..\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj" />
   </ItemGroup>

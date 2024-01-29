@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TomaszewskiWawrzyniak.MonitoryApp.BLC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23341f3831a726369fed8b8a23d4823e2be4bd71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84115c41f134c2d75f972083eb32cfcc94f2e917")]
 [assembly: System.Reflection.AssemblyProductAttribute("TomaszewskiWawrzyniak.MonitoryApp.BLC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TomaszewskiWawrzyniak.MonitoryApp.BLC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

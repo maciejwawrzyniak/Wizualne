@@ -1,5 +1,6 @@
 ﻿using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;
 using System.Reflection;
+using Microsoft.Extensions.Configuration;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
 {
@@ -7,9 +8,9 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
     {
         private IDAO dao;
 
-        public BLC( string libraryName, )
+        public BLC(IConfiguration configuration)
         {
-
+            string libraryName = System.Configuration.ConfigurationManager.AppSettings["DBLibraryName"]!;
             Type? typeToCreate = null;
             Assembly assembly = Assembly.UnsafeLoadFrom(libraryName);
             foreach( Type type in assembly.GetTypes() )
@@ -20,8 +21,15 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
                     break;
                 }
             }
-
-            dao = (IDAO)Activator.CreateInstance(typeToCreate, null);
+            ConstructorInfo? constructor = typeToCreate.GetConstructor(new[] { typeof(IConfiguration) });
+            if ( constructor != null )
+            {
+                dao = (IDAO)constructor.Invoke(new object[] { configuration });
+            }
+            else
+            {
+                dao = (IDAO)Activator.CreateInstance(typeToCreate, null);
+            }
         }
 
         public IEnumerable<IProducer> GetProducers()
