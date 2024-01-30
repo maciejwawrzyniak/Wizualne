@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TomaszewskiWawrz.MonitoryApp.MAUI</name>
+    </assembly>
+    <members>
+        <member name="T:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorsCollectionViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorsCollectionViewModel.Monitors">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorsCollectionViewModel.monitors"/>
+        </member>
+        <member name="T:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.Id">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.id"/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.Name">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.name"/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.Producer">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.producer"/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.Diagonal">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.diagonal"/>
+        </member>
+        <member name="P:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.Matrix">
+            <inheritdoc cref="F:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels.MonitorViewModel.matrix"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Monitors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Monitors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Producer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Producer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Diagonal">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Diagonal" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Matrix">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Matrix" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Monitors">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Monitors" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Producer">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Producer" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Diagonal">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Diagonal" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Matrix">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Matrix" generated properties.</summary>
+        </member>
+    </members>
+</doc>
