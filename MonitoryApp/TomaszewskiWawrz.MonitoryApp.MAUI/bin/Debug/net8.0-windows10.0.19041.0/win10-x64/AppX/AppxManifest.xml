@@ -8,7 +8,7 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="com.companyname.tomaszewskiwawrz.monitoryapp.maui" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
-  <mp:PhoneIdentity PhoneProductId="52A83367-A138-4AD3-9AC0-75737A85D9FF" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="7FABAAA6-47B5-401E-A6F0-EA065603E729" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>TomaszewskiWawrz.MonitoryApp.MAUI</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>

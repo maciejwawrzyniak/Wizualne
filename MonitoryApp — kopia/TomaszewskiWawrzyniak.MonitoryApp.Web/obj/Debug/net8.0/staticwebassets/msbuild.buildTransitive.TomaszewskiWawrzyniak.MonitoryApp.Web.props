@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TomaszewskiWawrzyniak.MonitoryApp.Web.props" />
+</Project>

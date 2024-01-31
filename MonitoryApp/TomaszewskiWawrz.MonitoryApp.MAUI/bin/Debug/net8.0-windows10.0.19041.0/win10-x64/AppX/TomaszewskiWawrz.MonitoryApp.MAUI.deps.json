@@ -9,15 +9,18 @@
     ".NETCoreApp,Version=v8.0/win10-x64": {
       "TomaszewskiWawrz.MonitoryApp.MAUI/1.0": {
         "dependencies": {
+          "CommunityToolkit.Maui": "7.0.1",
           "CommunityToolkit.Mvvm": "8.2.2",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.3",
           "Microsoft.Maui.Controls.Compatibility": "8.0.3",
+          "System.Configuration.ConfigurationManager": "8.0.0",
           "TomaszewskiWawrzyniak.MonitoryApp.BLC": "1.0.0",
           "TomaszewskiWawrzyniak.MonitoryApp.Core": "1.0.0",
           "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1": "1.0.0",
           "TomaszewskiWawrzyniak.MonitoryApp.Interfaces": "1.0.0",
-          "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.Reference": "1.0.0.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -33,6 +36,31 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.4.44211"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/7.0.1": {
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "7.0.1",
+          "Microsoft.Maui.Controls": "8.0.3"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/7.0.1": {
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.3",
+          "Microsoft.Maui.Essentials": "8.0.3",
+          "System.Speech": "8.0.0-rc.2.23479.6"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -158,6 +186,36 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
@@ -184,6 +242,38 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.23.53103"
           }
@@ -628,6 +718,14 @@
           }
         }
       },
+      "System.Speech/8.0.0-rc.2.23479.6": {
+        "runtime": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.47906"
+          }
+        }
+      },
       "System.Text.Encodings.Web/8.0.0": {},
       "System.Text.Json/8.0.0": {
         "dependencies": {
@@ -651,20 +749,23 @@
           "TomaszewskiWawrzyniak.MonitoryApp.Core.dll": {}
         }
       },
+      "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.1",
+          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.1",
+          "TomaszewskiWawrzyniak.MonitoryApp.Core": "1.0.0",
+          "TomaszewskiWawrzyniak.MonitoryApp.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.dll": {}
+        }
+      },
       "TomaszewskiWawrzyniak.MonitoryApp.Interfaces/1.0.0": {
         "dependencies": {
           "TomaszewskiWawrzyniak.MonitoryApp.Core": "1.0.0"
         },
         "runtime": {
           "TomaszewskiWawrzyniak.MonitoryApp.Interfaces.dll": {}
-        }
-      },
-      "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.Reference/1.0.0.0": {
-        "runtime": {
-          "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       }
     }
@@ -679,6 +780,20 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommunityToolkit.Maui/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ecgi4LwhP8uMftmRdriPA9/I+BP4nDuwrW408e7cnCthMArog0W9/A50RyEP65WH/+T7nM0gUlrz4xLpmIiXRQ==",
+      "path": "communitytoolkit.maui/7.0.1",
+      "hashPath": "communitytoolkit.maui.7.0.1.nupkg.sha512"
+    },
+    "CommunityToolkit.Maui.Core/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wHh885/5ZNo9gkFOsM/AZle1jqC1V/VxAD9PAuN0FACxdb+KOLaBkt8Jh1j9lBryWngsFvV+1D6kBz6LigKM8g==",
+      "path": "communitytoolkit.maui.core/7.0.1",
+      "hashPath": "communitytoolkit.maui.core.7.0.1.nupkg.sha512"
     },
     "CommunityToolkit.Mvvm/8.2.2": {
       "type": "package",
@@ -764,6 +879,20 @@
       "path": "microsoft.extensions.configuration.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.FileExtensions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-McP+Lz/EKwvtCv48z0YImw+L1gi1gy5rHhNaNIY2CrjloV+XY8gydT8DjMR6zWeL13AFK+DioVpppwAuO1Gi1w==",
+      "path": "microsoft.extensions.configuration.fileextensions/8.0.0",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C2wqUoh9OmRL1akaCcKSTmRU8z0kckfImG7zLNI8uyi47Lp+zd5LWAD17waPQEqCz3ioWOCrFUo+JJuoeZLOBw==",
+      "path": "microsoft.extensions.configuration.json/8.0.0",
+      "hashPath": "microsoft.extensions.configuration.json.8.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -784,6 +913,27 @@
       "sha512": "sha512-NSmDw3K0ozNDgShSIpsZcbFIzBX4w28nDag+TfaQujkXGazBm+lid5onlWoCBy4VsLxqnnKjEBbGSJVWJMf43g==",
       "path": "microsoft.extensions.dependencymodel/8.0.0",
       "hashPath": "microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
+      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UboiXxpPUpwulHvIAVE36Knq0VSHaAmfrFkegLyBZeaADuKezJ/AIXYAW8F5GBlGk/VaibN2k/Zn1ca8YAfVdA==",
+      "path": "microsoft.extensions.fileproviders.physical/8.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OK+670i7esqlQrPjdIKRbsyMCe9g5kSLpRRQGSr4Q58AOYEe/hCnfLZprh7viNisSUUQZmMrbbuDaIrP+V1ebQ==",
+      "path": "microsoft.extensions.filesystemglobbing/8.0.0",
+      "hashPath": "microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/8.0.0": {
       "type": "package",
@@ -967,6 +1117,13 @@
       "path": "system.security.cryptography.protecteddata/8.0.0",
       "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
     },
+    "System.Speech/8.0.0-rc.2.23479.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vWd/mmQQo2vXp5aDjwi/bj9DO4MABNMZtYpRhzYBFDzvDln68eZBgW+rYMT81egXmNcnt87+6+GbpZ8GW2VJ6w==",
+      "path": "system.speech/8.0.0-rc.2.23479.6",
+      "hashPath": "system.speech.8.0.0-rc.2.23479.6.nupkg.sha512"
+    },
     "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -991,13 +1148,13 @@
       "serviceable": false,
       "sha512": ""
     },
-    "TomaszewskiWawrzyniak.MonitoryApp.Interfaces/1.0.0": {
+    "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.Reference/1.0.0.0": {
-      "type": "reference",
+    "TomaszewskiWawrzyniak.MonitoryApp.Interfaces/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

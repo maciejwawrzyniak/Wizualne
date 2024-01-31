@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TomaszewskiWawrzyniak.MonitoryApp.Web.props" />
+</Project>
