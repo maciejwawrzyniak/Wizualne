@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TomaszewskiWawrz.MonitoryApp.MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2c7be7d204883b3ae8c8d074299a0c227d94f006")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ab54dc147ee759876867a9b7a4b0ec06c71e748d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TomaszewskiWawrz.MonitoryApp.MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TomaszewskiWawrz.MonitoryApp.MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
