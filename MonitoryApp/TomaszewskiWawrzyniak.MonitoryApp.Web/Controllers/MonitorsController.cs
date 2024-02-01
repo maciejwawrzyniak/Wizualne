@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Elfie.Extensions;
+using TomaszewskiWawrzyniak.MonitoryApp.Core;
 using TomaszewskiWawrzyniak.MonitoryApp.Web.Models;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
@@ -14,9 +16,69 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
         }
 
         // GET: Monitors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchName, string producer, float minDiagonal, float maxDiagonal, string matrix)
         {
-            return View(_blc.GetMonitors());
+            ViewData["SearchName"] = searchName;
+            ViewData["MinDiagonal"] = minDiagonal;
+            ViewData["MaxDiagonal"] = maxDiagonal;
+            
+            IEnumerable<SelectListItem> producers = _blc.GetProducers()
+                .Select( p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() })
+                .Prepend(new SelectListItem() { Text = "All", Value = "" })
+                .ToList();
+            foreach (SelectListItem _producer in producers)
+            {
+                if(_producer.Value  == producer)
+                {
+                    _producer.Selected = true;
+                }
+                else
+                {
+                    _producer.Selected = false;
+                }
+            }
+            ViewData["Producers"] = producers;
+
+            IEnumerable<SelectListItem> matrixes = Enum.GetValues(typeof(MatrixType))
+                .Cast<MatrixType>()
+                .Select(m => new SelectListItem() { Text = m.ToString(), Value = m.ToString() })
+                .Prepend(new SelectListItem() { Text = "All", Value = "" })
+                .ToList();
+            foreach (SelectListItem m in matrixes)
+            {
+                if (m.Value == matrix)
+                {
+                    m.Selected = true;
+                }
+                else
+                {
+                    m.Selected = false;
+                }
+            }
+            ViewData["Matrixes"] = matrixes;
+
+            if(maxDiagonal == 0)
+            {
+                return View(_blc.FilterMonitors(searchName, matrix, minDiagonal, float.MaxValue, producer).Select(m => new MonitorDetails()
+                {
+                    Id = m.Id,
+                    Name = m.Name,
+                    ProducerName = m.Producer.Name,
+                    Diagonal = m.Diagonal,
+                    Matrix = m.Matrix
+                }));
+            }
+            else
+            {
+                return View(_blc.FilterMonitors(searchName, matrix, minDiagonal, maxDiagonal, producer).Select(m => new MonitorDetails()
+                {
+                    Id = m.Id,
+                    Name = m.Name,
+                    ProducerName = m.Producer.Name,
+                    Diagonal = m.Diagonal,
+                    Matrix = m.Matrix
+                }));
+            }
         }
 
         // GET: Monitors/Details/5
@@ -36,7 +98,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
             {
                 Id = monitor.Id,
                 Name = monitor.Name,
-                Producer = monitor.Producer.Id,
+                ProducerName = monitor.Producer.Name,
                 Diagonal = monitor.Diagonal,
                 Matrix = monitor.Matrix
             };
@@ -134,7 +196,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
             {
                 Id = monitor.Id,
                 Name = monitor.Name,
-                Producer = monitor.Producer.Id,
+                ProducerName = monitor.Producer.Name,
                 Diagonal = monitor.Diagonal,
                 Matrix = monitor.Matrix
             };

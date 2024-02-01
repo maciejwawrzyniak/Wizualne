@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO.Monitor>
+﻿@model IEnumerable<TomaszewskiWawrzyniak.MonitoryApp.Web.Models.MonitorDetails>
 
 @{
     ViewData["Title"] = "Index";
@@ -9,6 +9,32 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-action="Index" method="get" style="max-width: 200px">
+    <div class="form-group">
+        <label class="control-label">Find by name: </label>
+        <input type="text" name="SearchName" value="@ViewData["SearchName"]" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Minimal diagonal: </label>
+        <input type="text" name="minDiagonal" value="@ViewData["MinDiagonal"]" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Maximal diagonal: </label>
+        <input type="text" name="maxDiagonal" value="@ViewData["MaxDiagonal"]" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Matrix: </label>
+        <select name="Matrix" class="form-control" asp-items="@ViewData["Matrixes"] as List<SelectListItem>"></select>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Producer: </label>
+        <select name="Producer" class="form-control" asp-items="@ViewData["Producers"] as List<SelectListItem>"></select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Filter" class="btn btn-default" /> |
+        <a asp-action="Index">Back to Full List</a>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -22,7 +48,7 @@
                 @Html.DisplayNameFor(model => model.Matrix)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Producer)
+                @Html.DisplayNameFor(model => model.ProducerName)
             </th>
             <th></th>
         </tr>
@@ -40,7 +66,7 @@
                 @Html.DisplayFor(modelItem => item.Matrix)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Producer.Name)
+                @Html.DisplayFor(modelItem => item.ProducerName)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

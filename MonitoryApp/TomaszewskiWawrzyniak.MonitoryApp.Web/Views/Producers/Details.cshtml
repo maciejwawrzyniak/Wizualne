@@ -1,5 +1,4 @@
-﻿@model TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO.Producer
-
+﻿@model TomaszewskiWawrzyniak.MonitoryApp.Web.Models.ProducerDetails
 @{
     ViewData["Title"] = "Details";
 }
@@ -24,6 +23,42 @@
         </dd>
     </dl>
 </div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Monitors
+            </th>
+            <th>
+                Diagonal
+            </th>
+            <th>
+                Matrix
+            </th>
+            <th>
+                Producer Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+@foreach (var item in Model.Monitors)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProducerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diagonal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Matrix)
+        </td>
+    </tr>
+}
+</table>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using TomaszewskiWawrzyniak.MonitoryApp.Web.Models;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
@@ -13,9 +14,28 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
         }
 
         // GET: Producers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchName, string countryFrom)
         {
-            return View(_blc.GetProducers());
+            ViewData["SearchName"] = searchName;
+            IEnumerable<SelectListItem> countriesFrom = _blc.GetAllProducersCountries()
+                .Select(x => new SelectListItem() { Text = x.ToString(), Value = x.ToString() })
+                .Prepend(new SelectListItem() { Text = "All", Value = "" })
+                .ToList();
+            foreach (SelectListItem country in countriesFrom)
+            {
+                if(country.Value == countryFrom)
+                {
+                    country.Selected = true;
+                    break;
+                }
+            }
+            ViewData["CountriesFrom"] = countriesFrom;
+            return View(_blc.FilterProducers(searchName, countryFrom).Select(m => new ProducerDetails()
+            {
+                Id= m.Id,
+                Name = m.Name,
+                CountryFrom = m.CountryFrom
+            }));
         }
 
         // GET: Producers/Details/5
@@ -31,8 +51,35 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
             {
                 return NotFound();
             }
-
-            return View(producer);
+            if (producer.Monitors == null)
+            {
+                ProducerDetails details = new ProducerDetails()
+                {
+                    Id = producer.Id,
+                    Name = producer.Name,
+                    CountryFrom = producer.CountryFrom,
+                    Monitors = new List<MonitorDetails>()
+                };
+                return View(details);
+            }
+            else
+            {
+                ProducerDetails details = new ProducerDetails()
+                {
+                    Id = producer.Id,
+                    Name = producer.Name,
+                    CountryFrom = producer.CountryFrom,
+                    Monitors = producer.Monitors.Select(m => new MonitorDetails()
+                    {
+                        Id = m.Id,
+                        Name = m.Name,
+                        ProducerName = producer.Name,
+                        Diagonal = m.Diagonal,
+                        Matrix = m.Matrix,
+                    }).ToList()
+                };
+                return View(details);
+            }
         }
 
         // GET: Producers/Create

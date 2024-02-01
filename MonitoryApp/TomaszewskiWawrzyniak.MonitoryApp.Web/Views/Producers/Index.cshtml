@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO.Producer>
+﻿@model IEnumerable<TomaszewskiWawrzyniak.MonitoryApp.Web.Models.ProducerDetails>
 
 @{
     ViewData["Title"] = "Index";
@@ -9,6 +9,20 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-action="Index" method="get" style="max-width: 200px">
+    <div class="form-group">
+        <label class="control-label">Name: </label>
+        <input type="text" name="SearchName" value="@ViewData["SearchName"]" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Country: </label>
+        <select name="CountryFrom" class="form-control" asp-items="@ViewData["CountriesFrom"] as List<SelectListItem>"></select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Filter" class="btn btn-default" /> |
+        <a asp-action="Index">Back to Full List</a>
+    </div>
+</form>
 <table class="table">
     <thead>
         <tr>
