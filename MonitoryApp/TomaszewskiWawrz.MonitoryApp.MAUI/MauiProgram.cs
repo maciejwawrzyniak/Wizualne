@@ -19,7 +19,7 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services.AddSingleton<MonitorsCollectionViewModel>();
-            builder.Services.AddSingleton<MonitorViewModel>();
+            builder.Services.AddSingleton<MonitorsPage>();
             builder.Services.AddSingleton<BLC>();
 
 #if DEBUG

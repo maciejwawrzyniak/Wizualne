@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RepozytoriaGithub\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {}
+    "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\RepozytoriaGithub\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+    "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RepozytoriaGithub\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
         "projectName": "TomaszewskiWawrzyniak.MonitoryApp.Core",
-        "projectPath": "C:\\RepozytoriaGithub\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
-        "packagesPath": "C:\\Users\\wawrz\\.nuget\\packages\\",
-        "outputPath": "C:\\RepozytoriaGithub\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\obj\\",
+        "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
+        "packagesPath": "C:\\Users\\ProOko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\wawrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ProOko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

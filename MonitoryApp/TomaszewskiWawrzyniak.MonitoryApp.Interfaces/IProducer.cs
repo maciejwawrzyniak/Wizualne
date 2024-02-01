@@ -5,5 +5,6 @@
         Guid Id { get; set; }
         string Name { get; set; }
         string CountryFrom { get; set; }
+        ICollection<IMonitor> Monitors { get; set; }
     }
 }

@@ -44,6 +44,19 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
         }
         public IEnumerable<IMonitor> GetMonitors()
         {
+            string currentDirectory = AppContext.BaseDirectory;
+
+            while (currentDirectory != null)
+            {
+                if (Directory.GetFiles(currentDirectory, "*.csproj").Length > 0 ||
+                    Directory.GetFiles(currentDirectory, "*.sln").Length > 0)
+                {
+                    break;
+                }
+                currentDirectory = Path.GetDirectoryName(currentDirectory);
+            }
+
+            string dbPath = Path.Combine(currentDirectory, "monitory.db");
             return dao.GetAllMonitors();
         }
         public IProducer? GetProducer(Guid Id)
@@ -120,6 +133,18 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             }
 
             return monitors;
+        }
+        public IEnumerable<string> GetAllProducersCountries()
+        {
+            return dao.GetAllProducers().Select(p => p.CountryFrom).Distinct().Order();
+        }
+        public IEnumerable<IProducer> GetAllMonitorsProducers()
+        {
+            return dao.GetAllMonitors().Select(m => m.Producer).Distinct().Order();
+        }
+        public IEnumerable<float> GetAllDiagonals()
+        {
+            return dao.GetAllMonitors().Select(m => m.Diagonal).Distinct().Order();
         }
     }
 }

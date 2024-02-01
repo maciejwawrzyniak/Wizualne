@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomaszewskiWawrzyniak.Monit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1", "TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj", "{3E703A1B-1718-42C1-98C6-61116CA77538}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomaszewskiWawrz.MonitoryApp.MAUI", "TomaszewskiWawrz.MonitoryApp.MAUI\TomaszewskiWawrz.MonitoryApp.MAUI.csproj", "{1A832840-8723-4F47-8C06-4E9331E4020F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomaszewskiWawrzyniak.MonitoryApp.Web", "TomaszewskiWawrzyniak.MonitoryApp.Web\TomaszewskiWawrzyniak.MonitoryApp.Web.csproj", "{471F1D70-8436-4932-9407-9ADECD9BC78D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomaszewskiWawrzyniak.MonitoryApp.Web", "TomaszewskiWawrzyniak.MonitoryApp.Web\TomaszewskiWawrzyniak.MonitoryApp.Web.csproj", "{471F1D70-8436-4932-9407-9ADECD9BC78D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomaszewskiWawrz.MonitoryApp.MAUI", "TomaszewskiWawrz.MonitoryApp.MAUI\TomaszewskiWawrz.MonitoryApp.MAUI.csproj", "{2AD1772F-783D-4141-88AC-6D3AB75B2E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,16 +43,16 @@ Global
 		{3E703A1B-1718-42C1-98C6-61116CA77538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E703A1B-1718-42C1-98C6-61116CA77538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E703A1B-1718-42C1-98C6-61116CA77538}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A832840-8723-4F47-8C06-4E9331E4020F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{471F1D70-8436-4932-9407-9ADECD9BC78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{471F1D70-8436-4932-9407-9ADECD9BC78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471F1D70-8436-4932-9407-9ADECD9BC78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471F1D70-8436-4932-9407-9ADECD9BC78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD1772F-783D-4141-88AC-6D3AB75B2E81}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,21 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(_configuration.GetConnectionString("Sqlite"));
+            string currentDirectory = AppContext.BaseDirectory;
+
+            while (currentDirectory != null)
+            {
+                if (Directory.GetFiles(currentDirectory, "*.csproj").Length > 0 ||
+                    Directory.GetFiles(currentDirectory, "*.sln").Length > 0)
+                {
+                    break;
+                }
+                currentDirectory = Path.GetDirectoryName(currentDirectory);
+            }
+
+            string dbPath = Path.Combine(currentDirectory, "monitory.db");
+
+            optionsBuilder.UseSqlite($"Data Source={dbPath}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -45,6 +59,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
                     Matrix = matrixType
                 };
                 Monitors.Add(monitor);
+                //_producer.Monitors.Add(monitor);
                 SaveChanges();
                 return monitor;
             }
@@ -58,7 +73,8 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
             {
                 Id = Guid.NewGuid(),
                 Name = name,
-                CountryFrom = countryFrom
+                CountryFrom = countryFrom,
+                Monitors = new List<IMonitor>()
             };
             Producers.Add(_producer);
             SaveChanges();
@@ -74,6 +90,8 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
             }
             else
             {
+                Producer _producer = Producers.Find(monitor.Producer.Id);
+                //_producer.Monitors.Remove(monitor);
                 Monitors.Remove(monitor);
                 SaveChanges();
             }
@@ -142,7 +160,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
 
         public IEnumerable<IProducer> GetAllProducers()
         {
-            return Producers;
+            return Producers.Include(p => p.Monitors);
         }
 
         public IMonitor? GetMonitor(Guid id)

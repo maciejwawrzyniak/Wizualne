@@ -1,4 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TomaszewskiWawrzyniak.MonitoryApp.Core;
 using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;
 
@@ -29,5 +34,17 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels
             Diagonal = monitor.Diagonal;
             Matrix = monitor.Matrix;
         }
+
+        public MonitorViewModel()
+        {
+            Matrix = MatrixType.IPS;
+        }
+
+        public object Clone()
+        {
+            return new MonitorViewModel(this);
+        }
+
+        public IReadOnlyList<string> AllMatrixTypes { get; } = Enum.GetNames(typeof(MatrixType));
     }
 }
