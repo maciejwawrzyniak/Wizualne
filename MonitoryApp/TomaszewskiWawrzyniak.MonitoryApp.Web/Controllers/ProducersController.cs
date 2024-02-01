@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1;
-using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO;
+﻿using Microsoft.AspNetCore.Mvc;
 using TomaszewskiWawrzyniak.MonitoryApp.Web.Models;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
@@ -100,7 +92,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                _blc.EditProducer(producer.Id,producer.Name, producer.CountryFrom);
+                _blc.EditProducer(producer.Id, producer.Name, producer.CountryFrom);
                 return RedirectToAction(nameof(Index));
             }
             return View(producer);
@@ -125,7 +117,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
                 Name = producer.Name,
                 CountryFrom = producer.CountryFrom
             };
-            
+
             return View(producerDetails);
         }
 

@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1;
-using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO;
 using TomaszewskiWawrzyniak.MonitoryApp.Web.Models;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
@@ -116,8 +109,8 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                    _blc.EditMonitor(monitor.Id, monitor.Name, monitor.Producer, monitor.Diagonal, monitor.Matrix);
-                    return RedirectToAction(nameof(Index));
+                _blc.EditMonitor(monitor.Id, monitor.Name, monitor.Producer, monitor.Diagonal, monitor.Matrix);
+                return RedirectToAction(nameof(Index));
             }
             var producers = _blc.GetProducers();
             monitor.Producers = producers.Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() }).ToList();

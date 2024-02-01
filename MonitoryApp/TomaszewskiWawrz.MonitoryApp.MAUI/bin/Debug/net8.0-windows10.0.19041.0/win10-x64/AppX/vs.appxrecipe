@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\RepozytoriaGithub\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-30T23:52:29.961</Modified>
+      <Modified>2024-02-01T16:52:21.445</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\RepozytoriaGithub\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.dll">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.dll</PackagePath>
-      <Modified>2024-01-30T23:52:25.259</Modified>
+      <Modified>2024-02-01T16:52:19.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\RepozytoriaGithub\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.dll.config">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.dll.config</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\RepozytoriaGithub\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.exe</PackagePath>
-      <Modified>2024-01-30T23:52:25.394</Modified>
+      <Modified>2024-02-01T16:52:19.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\RepozytoriaGithub\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

@@ -1,4 +1,3 @@
-using TomaszewskiWawrzyniak.MonitoryApp.BLC;
 using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Web

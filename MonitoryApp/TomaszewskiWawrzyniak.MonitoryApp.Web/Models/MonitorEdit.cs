@@ -6,7 +6,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Web.Models
 {
     public class MonitorEdit
     {
-        public Guid Id {  get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public Guid Producer { get; set; }
         [Range(1, float.MaxValue)]

@@ -23,7 +23,7 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI
             builder.Services.AddSingleton<BLC>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -1,6 +1,4 @@
-﻿using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;
-
-namespace TomaszewskiWawrzyniak.MonitoryApp
+﻿namespace TomaszewskiWawrzyniak.MonitoryApp
 {
     internal class Program
     {

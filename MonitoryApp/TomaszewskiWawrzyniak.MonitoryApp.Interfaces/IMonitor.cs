@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TomaszewskiWawrzyniak.MonitoryApp.Core;
+﻿using TomaszewskiWawrzyniak.MonitoryApp.Core;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.Interfaces
 {
@@ -12,7 +7,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.Interfaces
         Guid Id { get; set; }
         string Name { get; set; }
         IProducer Producer { get; set; }
-        float Diagonal {  get; set; }
+        float Diagonal { get; set; }
         MatrixType Matrix { get; set; }
 
     }

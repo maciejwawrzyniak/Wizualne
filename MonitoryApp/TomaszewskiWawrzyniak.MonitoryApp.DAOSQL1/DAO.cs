@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Xml.Linq;
 using TomaszewskiWawrzyniak.MonitoryApp.Core;
 using TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO;
 using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;

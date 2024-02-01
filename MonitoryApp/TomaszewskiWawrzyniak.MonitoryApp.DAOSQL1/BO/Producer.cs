@@ -7,6 +7,6 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.BO
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string CountryFrom { get; set; }
-        public ICollection<IMonitor> Monitors {  get; set; }
+        public ICollection<IMonitor> Monitors { get; set; }
     }
 }

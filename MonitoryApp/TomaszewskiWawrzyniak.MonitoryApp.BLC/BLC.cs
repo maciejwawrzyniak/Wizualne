@@ -1,8 +1,7 @@
-﻿using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;
+﻿using Microsoft.Extensions.Configuration;
 using System.Reflection;
-using Microsoft.Extensions.Configuration;
 using TomaszewskiWawrzyniak.MonitoryApp.Core;
-using static System.Reflection.Metadata.BlobBuilder;
+using TomaszewskiWawrzyniak.MonitoryApp.Interfaces;
 
 namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
 {
@@ -15,16 +14,16 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             string libraryName = System.Configuration.ConfigurationManager.AppSettings["DBLibraryName"]!;
             Type? typeToCreate = null;
             Assembly assembly = Assembly.UnsafeLoadFrom(libraryName);
-            foreach( Type type in assembly.GetTypes() )
+            foreach (Type type in assembly.GetTypes())
             {
-                if( type.IsAssignableTo(typeof( IDAO )) ) 
+                if (type.IsAssignableTo(typeof(IDAO)))
                 {
                     typeToCreate = type;
                     break;
                 }
             }
             ConstructorInfo? constructor = typeToCreate!.GetConstructor(new[] { typeof(IConfiguration) });
-            if ( constructor != null )
+            if (constructor != null)
             {
                 dao = (IDAO)constructor.Invoke(new object[] { configuration });
             }
@@ -34,7 +33,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             }
         }
 
-        public BLC(IDAO dao) 
+        public BLC(IDAO dao)
         {
             this.dao = dao;
         }
@@ -61,7 +60,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             return dao.CreateNewProducer(name, countryFrom);
         }
 
-        public IMonitor CreateNewMonitor(string name, Guid producer, float diagonal, MatrixType matrixType) 
+        public IMonitor CreateNewMonitor(string name, Guid producer, float diagonal, MatrixType matrixType)
         {
             return dao.CreateNewMonitor(name, producer, diagonal, matrixType);
         }
@@ -70,7 +69,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
         {
             dao.EditProducer(id, name, countryFrom);
         }
-        public void EditMonitor(Guid id, string name, Guid producer, float diagonal, MatrixType matrixType )
+        public void EditMonitor(Guid id, string name, Guid producer, float diagonal, MatrixType matrixType)
         {
             dao.EditMonitor(id, name, producer, diagonal, matrixType);
         }
@@ -83,7 +82,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             dao.DeleteMonitor(id);
         }
 
-        public IEnumerable<IProducer> FilterProducers(string name, string countryFrom) 
+        public IEnumerable<IProducer> FilterProducers(string name, string countryFrom)
         {
             IEnumerable<IProducer> producers = dao.GetAllProducers();
             if (!string.IsNullOrEmpty(name))
