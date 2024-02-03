@@ -22,3 +22,15 @@ C:\Users\ProOko\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\
 C:\Users\ProOko\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\refint\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
 C:\Users\ProOko\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
 C:\Users\ProOko\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\ref\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.deps.json
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.AssemblyInfoInputs.cache
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.AssemblyInfo.cs
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj.CoreCompileInputs.cache
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.sourcelink.json
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\refint\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
+C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\ref\TomaszewskiWawrzyniak.MonitoryApp.Core.dll

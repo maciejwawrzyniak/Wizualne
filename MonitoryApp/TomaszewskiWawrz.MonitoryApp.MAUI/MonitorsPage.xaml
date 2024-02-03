@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TomaszewskiWawrz.MonitoryApp.MAUI.MonitorsPage"
+             xmlns:viewmodel="clr-namespace:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels"
+             Title="MonitorsPage">
+    <VerticalStackLayout>
+        <ListView ItemsSource="{Binding Monitors}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Border Stroke="Black" StrokeThickness="2">
+                            <HorizontalStackLayout x:DataType="viewmodel:MonitorViewModel">
+                                <Label Text="{Binding Name}" WidthRequest="100" />
+                                <Label Text="{Binding Producer.Name}" WidthRequest="100" />
+                                <Label Text="{Binding Diagonal}" WidthRequest="50" />
+                                <Label Text="{Binding Matrix}" WidthRequest="100" />
+                            </HorizontalStackLayout>
+                        </Border>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" 
+              ColumnDefinitions="Auto,Auto,Auto,Auto" 
+              BindingContext="{Binding MonitorEdit}">
+
+            <Label Grid.Column="0" Grid.Row="0" Text="Name"/>
+            <Entry Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+
+            <Label Grid.Column="0" Grid.Row="1" Text="Producer"/>
+            <Entry Grid.Column="1" Grid.Row="1" Text="{Binding Producer}" />
+
+            <Label Grid.Column="0" Grid.Row="2" Text="Diagonal"/>
+            <Entry Grid.Column="1" Grid.Row="2" Text="{Binding Diagonal}" />
+
+            <Label Grid.Column="0" Grid.Row="3" Text="Matrix"/>
+            <Entry Grid.Column="1" Grid.Row="3" Text="{Binding Matrix}" />
+        </Grid>
+        <HorizontalStackLayout>
+            <Button Text="New Monitor" Command="{Binding CreateNewMonitorCommand}"/>
+            <Button Text="Save Monitor" Command="{Binding SaveMonitorCommand}"/>
+            <Button Text="Cancel" Command="{Binding CancelCommand}"/>
+            
+        </HorizontalStackLayout>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -47899,24 +47899,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ProOko\\.nuget\\packages\\": {},
+    "C:\\Users\\wawrz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\TomaszewskiWawrz.MonitoryApp.MAUI.csproj",
+      "projectUniqueName": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\TomaszewskiWawrz.MonitoryApp.MAUI.csproj",
       "projectName": "TomaszewskiWawrz.MonitoryApp.MAUI",
-      "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\TomaszewskiWawrz.MonitoryApp.MAUI.csproj",
-      "packagesPath": "C:\\Users\\ProOko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\obj\\",
+      "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\TomaszewskiWawrz.MonitoryApp.MAUI.csproj",
+      "packagesPath": "C:\\Users\\wawrz\\.nuget\\packages\\",
+      "outputPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrz.MonitoryApp.MAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ProOko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wawrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -47935,68 +47935,68 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
             }
           }
         },
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
             }
           }
         },
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
             }
           }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.csproj"
             },
-            "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\ProOko\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
+            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
+              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
             }
           }
         }

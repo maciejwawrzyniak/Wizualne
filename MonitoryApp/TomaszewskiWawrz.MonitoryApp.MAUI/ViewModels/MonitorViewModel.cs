@@ -37,7 +37,7 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels
 
         public MonitorViewModel()
         {
-            Matrix = MatrixType.IPS;
+            //Matrix = MatrixType.IPS;
         }
 
         public object Clone()
