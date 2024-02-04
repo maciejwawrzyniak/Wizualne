@@ -2,19 +2,53 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TomaszewskiWawrz.MonitoryApp.MAUI.MonitorsPage"
+             x:Name="MonitorsContextPageName"
              xmlns:viewmodel="clr-namespace:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels"
              Title="MonitorsPage">
     <VerticalStackLayout>
-        <ListView ItemsSource="{Binding Monitors}" ItemTapped ="ListView_ItemTapped">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
+          ColumnDefinitions="Auto,Auto,Auto,Auto" 
+          BindingContext="{Binding MonitorFilter}">
+
+        <Label Grid.Column="0" Grid.Row="0" Text="Name"/>
+        <Entry Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+
+        <Label Grid.Column="0" Grid.Row="1" Text="Producer"/>
+        <Picker Grid.Column="1" Grid.Row="1" SelectedItem="{Binding Producer}" 
+                ItemsSource="{Binding BindingContext.GetProducers, Source={x:Reference MonitorsContextPageName}}" 
+                ItemDisplayBinding="{Binding Name}"  />
+
+        <Label Grid.Column="0" Grid.Row="2" Text="Min diagonal"/>
+        <Entry Grid.Column="1" Grid.Row="2" Text="{Binding MinDiagonal}" />
+    
+        <Label Grid.Column="0" Grid.Row="3" Text="Max diagonal"/>
+        <Entry Grid.Column="1" Grid.Row="3" Text="{Binding MaxDiagonal}" />
+
+        <Label Grid.Column="0" Grid.Row="4" Text="Matrix" />
+        <Picker Grid.Column="1" Grid.Row="4" SelectedItem="{Binding BindingContext.GetSelectedMatrixFilter, Source={x:Reference MonitorsContextPageName}}" ItemsSource="{Binding AllMatrixTypes}" />
+
+    </Grid>
+        <HorizontalStackLayout>
+            <Button Text="Filter" Command="{Binding FilterMonitorsCommand}"/>
+            <Button Text="Reset filter" Command="{Binding ResetFilterCommand}"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="Name" WidthRequest="200" FontAttributes="Bold"/>
+            <Label Text="Producer" WidthRequest="200" FontAttributes="Bold"/>
+            <Label Text="Diagonal" WidthRequest="200" FontAttributes="Bold"/>
+            <Label Text="Matrix" WidthRequest="200" FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+        <ListView x:Name="MonitorListView"  ItemsSource="{Binding Monitors}" ItemTapped ="ListView_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Border Stroke="Black" StrokeThickness="2">
+                        <Border Stroke="Black" StrokeThickness="1" Padding="10">
                             <HorizontalStackLayout x:DataType="viewmodel:MonitorViewModel">
-                                <Label Text="{Binding Name}" WidthRequest="100" />
-                                <Label Text="{Binding Producer.Name}" WidthRequest="100" />
-                                <Label Text="{Binding Diagonal}" WidthRequest="50" />
-                                <Label Text="{Binding Matrix}" WidthRequest="100" />
+                                <Label Text="{Binding Name}" WidthRequest="200" />
+                                <Label Text="{Binding Producer.Name}" WidthRequest="200" />
+                                <Label Text="{Binding Diagonal}" WidthRequest="200" />
+                                <Label Text="{Binding Matrix}" WidthRequest="200" />
                             </HorizontalStackLayout>
                         </Border>
                     </ViewCell>
@@ -30,13 +64,16 @@
             <Entry Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
 
             <Label Grid.Column="0" Grid.Row="1" Text="Producer"/>
-            <Entry Grid.Column="1" Grid.Row="1" Text="{Binding Producer}" />
+            <Picker Grid.Column="1" Grid.Row="1" SelectedItem="{Binding Producer}" 
+                    ItemsSource="{Binding BindingContext.GetProducers, Source={x:Reference MonitorsContextPageName}}" 
+                    ItemDisplayBinding="{Binding Name}"  />
 
             <Label Grid.Column="0" Grid.Row="2" Text="Diagonal"/>
             <Entry Grid.Column="1" Grid.Row="2" Text="{Binding Diagonal}" />
 
-            <Label Grid.Column="0" Grid.Row="3" Text="Matrix"/>
-            <Entry Grid.Column="1" Grid.Row="3" Text="{Binding Matrix}" />
+            <Label Grid.Column="0" Grid.Row="4" Text="Matrix" />
+            <Picker Grid.Column="1" Grid.Row="4" SelectedItem="{Binding BindingContext.GetSelectedMatrix, Source={x:Reference MonitorsContextPageName}}" ItemsSource="{Binding AllMatrixTypes}" />
+
         </Grid>
         <HorizontalStackLayout>
             <Button Text="New Monitor" Command="{Binding CreateNewMonitorCommand}"/>

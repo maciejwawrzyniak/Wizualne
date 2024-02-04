@@ -106,6 +106,13 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
             }
             else
             {
+                foreach(BO.Monitor monitor in Monitors)
+                {
+                    if (monitor.Producer.Id == id)
+                    {
+                        Monitors.Remove(monitor);
+                    }
+                }
                 Producers.Remove(producer);
                 SaveChanges();
             }

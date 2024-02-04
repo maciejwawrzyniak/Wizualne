@@ -38,11 +38,32 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
             producers.Add(producer);
             monitors.Add(monitor);
 
+            producer = new Producer()
+            {
+                Id = Guid.NewGuid(),
+                Name = "HP",
+                CountryFrom = "USA",
+                Monitors = new List<IMonitor>()
+            };
+
+            monitor = new DAOMOCK.BO.Monitor()
+            {
+                Id = Guid.NewGuid(),
+                Name = "V24i",
+                Diagonal = 24,
+                Matrix = MatrixType.IPS,
+                Producer = producer
+            };
+
+            producer.Monitors.Add(monitor);
+
+            producers.Add(producer);
+            monitors.Add(monitor);
         }
 
         public IMonitor CreateNewMonitor(string name, Guid producer, float diagonal, MatrixType matrixType)
         {
-            Producer? p = (Producer?)GetMonitor(producer);
+            Producer? p = (Producer)GetProducer(producer);
             if (p == null)
             {
                 throw new ArgumentException("Producer not found.");
@@ -85,7 +106,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
 
         public void DeleteProducer(Guid id)
         {
-            Producer? producer = (Producer?)GetMonitor(id);
+            Producer? producer = (Producer?)GetProducer(id);
             if (producer == null)
             {
                 throw new ArgumentException("Producer not found.");
@@ -115,7 +136,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1
 
         public IProducer EditProducer(Guid id, string name, string countryFrom)
         {
-            Producer? producer = (Producer?)GetMonitor(id);
+            Producer? producer = (Producer?)GetProducer(id);
             if (producer == null)
             {
                 throw new ArgumentException("Producer not found.");

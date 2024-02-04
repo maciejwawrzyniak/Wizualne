@@ -1,3 +1,4 @@
+//using Bumptech.Glide.Manager;
 using TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels;
 
 namespace TomaszewskiWawrz.MonitoryApp.MAUI;
@@ -8,13 +9,30 @@ public partial class MonitorsPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
+        viewModel.RefreshProducers();
+        viewModel.PropertyChanged += (sender, e) =>
+        {
+            if (e.PropertyName == nameof(viewModel.Monitors))
+            {
+                var updatedMonitors = viewModel.Monitors;
+                MonitorListView.ItemsSource = updatedMonitors;
+            }
+        };
 	}
+
+    protected override void OnAppearing()
+    {
+        ((MonitorsCollectionViewModel)BindingContext).RefreshProducers();
+        ((MonitorsCollectionViewModel)BindingContext).RefreshMonitors();
+        base.OnAppearing();
+    }
+
     void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         var monitorViewModel = (e.Item as MonitorViewModel).Clone() as MonitorViewModel;
-        //monitorViewModel.Producer = (BindingContext as MonitorsCollectionViewModel).AllPublishers.FirstOrDefault(p => p.ID == bookViewModel.Publisher.ID);
-        //(BindingContext as BookCollectionViewModel).RefreshPublishers();
-        //(BindingContext as BookCollectionViewModel).EditBook(bookViewModel);
+        monitorViewModel.Producer = (BindingContext as MonitorsCollectionViewModel).GetProducers.FirstOrDefault(p => p.Id == monitorViewModel.Producer.Id);
+        (BindingContext as MonitorsCollectionViewModel).RefreshProducers();
+        (BindingContext as MonitorsCollectionViewModel).EditMonitor(monitorViewModel);
 
     }
 }

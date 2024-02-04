@@ -44,19 +44,6 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
         }
         public IEnumerable<IMonitor> GetMonitors()
         {
-            string currentDirectory = AppContext.BaseDirectory;
-
-            while (currentDirectory != null)
-            {
-                if (Directory.GetFiles(currentDirectory, "*.csproj").Length > 0 ||
-                    Directory.GetFiles(currentDirectory, "*.sln").Length > 0)
-                {
-                    break;
-                }
-                currentDirectory = Path.GetDirectoryName(currentDirectory);
-            }
-
-            string dbPath = Path.Combine(currentDirectory, "monitory.db");
             return dao.GetAllMonitors();
         }
         public IProducer? GetProducer(Guid Id)
@@ -108,7 +95,7 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             }
             return producers;
         }
-        public IEnumerable<IMonitor> FilterMonitors(string name, string matrixType, float minDiagonal, float maxDiagonal, string publisher)
+        public IEnumerable<IMonitor> FilterMonitors(string name, string matrixType, float minDiagonal, float maxDiagonal, string producer)
         {
             IEnumerable<IMonitor> monitors = dao.GetAllMonitors();
             if (!string.IsNullOrEmpty(name))
@@ -119,9 +106,9 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
             {
                 monitors = monitors.Where(m => Enum.Parse<MatrixType>(matrixType) == m.Matrix);
             }
-            if (!string.IsNullOrEmpty(publisher))
+            if (!string.IsNullOrEmpty(producer))
             {
-                monitors = monitors.Where(m => m.Producer.Id == Guid.Parse(publisher));
+                monitors = monitors.Where(m => m.Producer.Id == Guid.Parse(producer));
             }
             if (float.IsPositive(minDiagonal))
             {
@@ -137,14 +124,6 @@ namespace TomaszewskiWawrzyniak.MonitoryApp.BLC
         public IEnumerable<string> GetAllProducersCountries()
         {
             return dao.GetAllProducers().Select(p => p.CountryFrom).Distinct().Order();
-        }
-        public IEnumerable<IProducer> GetAllMonitorsProducers()
-        {
-            return dao.GetAllMonitors().Select(m => m.Producer).Distinct().Order();
-        }
-        public IEnumerable<float> GetAllDiagonals()
-        {
-            return dao.GetAllMonitors().Select(m => m.Diagonal).Distinct().Order();
         }
     }
 }

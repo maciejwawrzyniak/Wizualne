@@ -13,9 +13,6 @@ public partial class ProducersPage : ContentPage
     void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
     {
         var producerViewModel = (e.Item as ProducerViewModel).Clone() as ProducerViewModel;
-        //monitorViewModel.Producer = (BindingContext as MonitorsCollectionViewModel).AllPublishers.FirstOrDefault(p => p.ID == bookViewModel.Publisher.ID);
-        //(BindingContext as BookCollectionViewModel).RefreshPublishers();
-        //(BindingContext as BookCollectionViewModel).EditBook(bookViewModel);
-
+        (BindingContext as ProducersCollectionViewModel).EditProducer(producerViewModel);
     }
 }

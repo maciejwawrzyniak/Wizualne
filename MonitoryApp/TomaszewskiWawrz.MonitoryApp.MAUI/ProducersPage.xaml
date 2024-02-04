@@ -5,24 +5,57 @@
              xmlns:viewmodel="clr-namespace:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels"
              Title="ProducersPage">
 
-    <StackLayout>
+    <VerticalStackLayout>
+        <Grid RowDefinitions="Auto,Auto" 
+          ColumnDefinitions="Auto,Auto,Auto,Auto" 
+          BindingContext="{Binding ProducerFilter}">
+
+            <Label Grid.Column="0" Grid.Row="0" Text="Name"/>
+            <Entry Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+            <Label Grid.Column="0" Grid.Row="1" Text="Country From" />
+            <Entry Grid.Column="1" Grid.Row="1" Text="{Binding CountryFrom}" />
+
+        </Grid>
+        <HorizontalStackLayout>
+            <Button Text="Filter" Command="{Binding FilterProducersCommand}"/>
+            <Button Text="Reset filter" Command="{Binding ResetFilterCommand}"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Name" WidthRequest="200" FontAttributes="Bold"/>
+            <Label Text="Country of production" WidthRequest="200" FontAttributes="Bold"/>
+        </HorizontalStackLayout>
         <!-- List of Producers -->
         <ListView ItemsSource="{Binding Producers}" ItemTapped="ListView_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
-                            <!-- Producer Information -->
-                            <Label Text="{Binding Name}" FontAttributes="Bold" />
-                            <Label Text="{Binding CountryFrom}" />
-
-                            <!-- List of Monitors for the current Producer -->
-                           
-                        </StackLayout>
+                        <Border Stroke="Black" StrokeThickness="1" Padding="10">
+                            <HorizontalStackLayout x:DataType="viewmodel:ProducerViewModel">
+                                <Label Text="{Binding Name}" FontAttributes="Bold" WidthRequest="200" />
+                                <Label Text="{Binding CountryFrom}" WidthRequest="200" />
+                            </HorizontalStackLayout>
+                        </Border>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+         <Grid RowDefinitions="Auto,Auto" 
+               ColumnDefinitions="Auto,Auto,Auto,Auto" 
+               BindingContext="{Binding ProducerEdit}">
 
-    </StackLayout>
+             <Label Grid.Column="0" Grid.Row="0" Text="Name"/>
+             <Entry Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+
+             <Label Grid.Column="0" Grid.Row="1" Text="Country from"/>
+             <Entry Grid.Column="1" Grid.Row="1" Text="{Binding CountryFrom}" />
+
+         </Grid>
+        <HorizontalStackLayout>
+            <Button Text="New Producer" Command="{Binding CreateNewProducerCommand}"/>
+            <Button Text="Save Producer" Command="{Binding SaveProducerCommand}"/>
+            <Button Text="Delete Producer" Command="{Binding DeleteProducerCommand}"></Button>
+            <Button Text="Cancel" Command="{Binding CancelCommand}"/>
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

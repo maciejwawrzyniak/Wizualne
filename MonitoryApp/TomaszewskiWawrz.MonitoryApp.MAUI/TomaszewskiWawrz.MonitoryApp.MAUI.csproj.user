@@ -10,9 +10,5 @@
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
-  <ItemGroup>
-    <None Update="ProducersPage.xaml">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
+  <ItemGroup />
 </Project>

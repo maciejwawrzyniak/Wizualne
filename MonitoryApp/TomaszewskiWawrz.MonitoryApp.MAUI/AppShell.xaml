@@ -15,7 +15,7 @@
         <ShellContent
     Title="Monitors"
     ContentTemplate="{DataTemplate local:MonitorsPage}"
-    Route="MonitorsPage" />
+    Route="MonitorsPage"  />
         <ShellContent
 Title="Producers"
 ContentTemplate="{DataTemplate local:ProducersPage}"

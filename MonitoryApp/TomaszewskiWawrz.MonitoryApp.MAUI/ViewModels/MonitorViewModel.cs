@@ -22,6 +22,10 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels
 
         [ObservableProperty]
         private float diagonal;
+        [ObservableProperty]
+        private float minDiagonal;
+        [ObservableProperty]
+        private float maxDiagonal;
 
         [ObservableProperty]
         private MatrixType matrix;
@@ -37,7 +41,7 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels
 
         public MonitorViewModel()
         {
-            //Matrix = MatrixType.IPS;
+
         }
 
         public object Clone()
@@ -45,6 +49,6 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels
             return new MonitorViewModel(this);
         }
 
-        public IReadOnlyList<string> AllMatrixTypes { get; } = Enum.GetNames(typeof(MatrixType));
+        public IReadOnlyList<string> AllMatrixTypes { get; } = Enum.GetNames(typeof(MatrixType)).ToList();
     }
 }

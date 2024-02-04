@@ -1,4 +1,6 @@
-﻿namespace TomaszewskiWawrz.MonitoryApp.MAUI
+﻿using TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels;
+
+namespace TomaszewskiWawrz.MonitoryApp.MAUI
 {
     public partial class AppShell : Shell
     {
