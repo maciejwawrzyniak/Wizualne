@@ -34,3 +34,15 @@ C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debu
 C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\refint\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
 C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
 C:\RepozytoriaGithub\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\ref\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.deps.json
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.AssemblyInfoInputs.cache
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.AssemblyInfo.cs
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj.CoreCompileInputs.cache
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.sourcelink.json
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\refint\TomaszewskiWawrzyniak.MonitoryApp.Core.dll
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.pdb
+C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\obj\Debug\net8.0\ref\TomaszewskiWawrzyniak.MonitoryApp.Core.dll

@@ -2791,23 +2791,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wawrz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.csproj",
+      "projectUniqueName": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.csproj",
       "projectName": "TomaszewskiWawrzyniak.MonitoryApp",
-      "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.csproj",
-      "packagesPath": "C:\\Users\\wawrz\\.nuget\\packages\\",
-      "outputPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\obj\\",
+      "projectPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.csproj",
+      "packagesPath": "C:\\Users\\Krzysiek\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wawrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Krzysiek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2823,14 +2825,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
-              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
+            "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj": {
+              "projectPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.BLC\\TomaszewskiWawrzyniak.MonitoryApp.BLC.csproj"
             },
-            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
-              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
+            "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj": {
+              "projectPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj"
             },
-            "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
-              "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
+            "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj": {
+              "projectPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.csproj"
             }
           }
         }

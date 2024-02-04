@@ -8,23 +8,25 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\wawrz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
+      "projectUniqueName": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
       "projectName": "TomaszewskiWawrzyniak.MonitoryApp.Core",
-      "projectPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
-      "packagesPath": "C:\\Users\\wawrz\\.nuget\\packages\\",
-      "outputPath": "C:\\RepozytoriaGithub\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\obj\\",
+      "projectPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\TomaszewskiWawrzyniak.MonitoryApp.Core.csproj",
+      "packagesPath": "C:\\Users\\Krzysiek\\.nuget\\packages\\",
+      "outputPath": "C:\\git\\Wizualne\\MonitoryApp\\TomaszewskiWawrzyniak.MonitoryApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\wawrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Krzysiek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
