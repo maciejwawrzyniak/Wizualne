@@ -9,10 +9,6 @@
 
     <FlyoutItem>
         <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage" />
-        <ShellContent
     Title="Monitors"
     ContentTemplate="{DataTemplate local:MonitorsPage}"
     Route="MonitorsPage"  />
