@@ -16,8 +16,12 @@
     Title="Monitors"
     ContentTemplate="{DataTemplate local:MonitorsPage}"
     Route="MonitorsPage" />
-        
-        
+        <ShellContent
+Title="Producers"
+ContentTemplate="{DataTemplate local:ProducersPage}"
+Route="ProducersPage" />
+
+
     </FlyoutItem>
     
 

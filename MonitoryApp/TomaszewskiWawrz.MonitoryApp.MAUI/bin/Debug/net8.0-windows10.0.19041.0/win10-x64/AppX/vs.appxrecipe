@@ -29,21 +29,21 @@
     <AppXManifest Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-04T10:51:10.974</Modified>
+      <Modified>2024-02-04T14:47:18.578</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-02-04T10:51:10.534</Modified>
+      <Modified>2024-02-04T14:37:08.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.runtimeconfig.json">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.runtimeconfig.json</PackagePath>
-      <Modified>2024-02-04T10:51:09.846</Modified>
+      <Modified>2024-02-04T14:37:08.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.dll">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.dll</PackagePath>
-      <Modified>2024-02-04T10:51:06.390</Modified>
+      <Modified>2024-02-04T14:47:17.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.dll.config">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.dll.config</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.exe</PackagePath>
-      <Modified>2024-02-04T10:51:06.500</Modified>
+      <Modified>2024-02-04T14:47:17.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -299,7 +299,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrz.MonitoryApp.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TomaszewskiWawrz.MonitoryApp.MAUI.deps.json">
       <PackagePath>TomaszewskiWawrz.MonitoryApp.MAUI.deps.json</PackagePath>
-      <Modified>2024-02-04T10:51:09.840</Modified>
+      <Modified>2024-02-04T14:37:08.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Krzysiek\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -663,19 +663,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.BLC\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.BLC.dll">
       <PackagePath>TomaszewskiWawrzyniak.MonitoryApp.BLC.dll</PackagePath>
-      <Modified>2024-02-04T10:50:43.025</Modified>
+      <Modified>2024-02-04T14:20:05.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Core\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Core.dll">
       <PackagePath>TomaszewskiWawrzyniak.MonitoryApp.Core.dll</PackagePath>
-      <Modified>2024-02-04T10:50:35.097</Modified>
+      <Modified>2024-02-04T14:20:00.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.dll">
       <PackagePath>TomaszewskiWawrzyniak.MonitoryApp.DAOSQL1.dll</PackagePath>
-      <Modified>2024-02-04T10:50:40.535</Modified>
+      <Modified>2024-02-04T14:20:04.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\git\Wizualne\MonitoryApp\TomaszewskiWawrzyniak.MonitoryApp.Interfaces\bin\Debug\net8.0\TomaszewskiWawrzyniak.MonitoryApp.Interfaces.dll">
       <PackagePath>TomaszewskiWawrzyniak.MonitoryApp.Interfaces.dll</PackagePath>
-      <Modified>2024-02-04T10:50:36.879</Modified>
+      <Modified>2024-02-04T14:20:02.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Krzysiek\.nuget\packages\microsoft.maui.controls.compatibility\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

@@ -20,6 +20,8 @@ namespace TomaszewskiWawrz.MonitoryApp.MAUI
                 });
             builder.Services.AddSingleton<MonitorsCollectionViewModel>();
             builder.Services.AddSingleton<MonitorsPage>();
+            builder.Services.AddSingleton<ProducersCollectionViewModel>();
+            builder.Services.AddSingleton<ProducersPage>();
             builder.Services.AddSingleton<BLC>();
 
 #if DEBUG

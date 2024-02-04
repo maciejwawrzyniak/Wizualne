@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:TomaszewskiWawrz.MonitoryApp.MAUI.ViewModels"
              Title="MonitorsPage">
     <VerticalStackLayout>
-        <ListView ItemsSource="{Binding Monitors}">
+        <ListView ItemsSource="{Binding Monitors}" ItemTapped ="ListView_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -41,6 +41,7 @@
         <HorizontalStackLayout>
             <Button Text="New Monitor" Command="{Binding CreateNewMonitorCommand}"/>
             <Button Text="Save Monitor" Command="{Binding SaveMonitorCommand}"/>
+            <Button Text="Delete Monitor" Command="{Binding DeleteMonitorCommand}"></Button>
             <Button Text="Cancel" Command="{Binding CancelCommand}"/>
             
         </HorizontalStackLayout>
